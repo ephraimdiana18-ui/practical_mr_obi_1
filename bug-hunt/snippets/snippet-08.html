@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 08</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 08</h1>
+  <p><strong>Should show:</strong> Access denied</p>
+  <hr>
+  <p id="out"></p>
+  <script>
+    let role = "guest";
+    let message;
+    if (role = "admin") {
+      message = "Welcome, admin";
+    } else {
+      message = "Access denied";
+    }
+    document.getElementById("out").textContent = message;
+  </script>
+</body>
+</html>

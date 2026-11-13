@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 07</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 07</h1>
+  <p><strong>Should show:</strong> Frontend Basics runs for 13 weeks</p>
+  <hr>
+  <p id="out"></p>
+  <script>
+    const course = { title: "Frontend Basics", weeks: 13 };
+    document.getElementById("out").textContent =
+      course.title + " runs for " + course.weeks() + " weeks";
+  </script>
+</body>
+</html>

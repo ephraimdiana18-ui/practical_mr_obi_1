@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 05</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 05</h1>
+  <p><strong>Should show:</strong> Ada lives in Awka. Tunde lives in unknown.</p>
+  <hr>
+  <p id="out"></p>
+  <script>
+    const ada = { name: "Ada", address: { city: "Awka" } };
+    const tunde = { name: "Tunde" };
+    document.getElementById("out").textContent =
+      ada.name + " lives in " + ada.address.city + ". " +
+      tunde.name + " lives in " + tunde.address.city + ".";
+  </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 02</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 02</h1>
+  <p><strong>Should show:</strong> Result: Passed</p>
+  <hr>
+  <p id="out"></p>
+  <script>
+    const score = 82;
+    if (score >= 50) {
+      let verdict = "Passed";
+    }
+    document.getElementById("out").textContent = "Result: " + verdict;
+  </script>
+</body>
+</html>

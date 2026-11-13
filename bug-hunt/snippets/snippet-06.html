@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 06</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 06</h1>
+  <p><strong>Should show:</strong> Click the button and the text below becomes: Clicked!</p>
+  <hr>
+  <button id="btn">Click me</button>
+  <p id="out"></p>
+  <script>
+    document.getElementById("btn").addEventListner("click", function () {
+      document.getElementById("out").textContent = "Clicked!";
+    });
+  </script>
+</body>
+</html>

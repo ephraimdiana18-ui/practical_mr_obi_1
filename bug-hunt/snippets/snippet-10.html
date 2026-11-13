@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snippet 10</title>
+</head>
+<body style="font-family: Georgia, serif; max-width: 560px; margin: 2rem auto;">
+  <h1>Snippet 10</h1>
+  <p><strong>Should show:</strong> A list of exactly four names: Ada, Tunde, Ngozi, Chidi</p>
+  <hr>
+  <ul id="out"></ul>
+  <script>
+    const names = ["Ada", "Tunde", "Ngozi", "Chidi"];
+    let html = "";
+    for (let i = 0; i <= names.length; i++) {
+      html += "<li>" + names[i] + "</li>";
+    }
+    document.getElementById("out").innerHTML = html;
+  </script>
+</body>
+</html>
